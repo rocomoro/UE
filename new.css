@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-align: center;
+    font-family: "Doto";
+
+    transition: .45s ease-in-out;
+    text-shadow: 1px 1px 12px black;
+}
+body {
+    min-height: 100vh;
+    color: white;
+    padding: 1rem;
+    background-color: rgb(0, 17, 47);
+    h1 {
+        margin: 1% 0;
+        color: rgb(0, 60, 255);
+        font-size: 6vw;
+        font-weight: 900;
+        font-style: bold;
+    }
+    h2 {
+        color: yellow;
+        font-weight: 800;
+        font-size: 4vw;
+        margin: 1% 0;
+    }
+    p {
+        color: yellow;
+        font-weight: 600;
+    }
+}
+nav {
+    font-size: .3vw;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    gap: 3rem;
+    height: 5rem;
+    justify-content: start;
+    align-items: center;
+    span {
+        margin-left: 1.5rem;
+    }
+    button {
+        max-width: 150px;
+        font-weight: 800;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+        margin: 0 1rem;
+        min-width: 33vw;
+    }   
+}
+section {
+    background-color: rgb(50, 50, 50);
+    padding: 1.5rem;
+    margin: 1rem;
+}
+button {
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 3vw;
+    border: rgba(0, 60, 255) outset 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(23, 23, 23);
+    padding: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(10, 10, 10)
+}
+#index {
+    display: flex;
+    justify-content: center;
+    section {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-flow: column;
+        width: 100vw;
+    }
+    main {
+        min-height: 85vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    button { 
+        min-width: 50vw;
+    }
+}
+#inf {
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        background-color: rgb(23, 23, 23);
+        min-width: 300px;
+        width: 30%;
+        height: 50vh;
+        border-radius: 5%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }  
+    h3 {
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        font-size: 2vw;
+    }
+    p {
+        font-size: 1.2vw;
+        font-weight: 800;
+    }
+}
+#jogo { 
+    main {
+        min-height: 75vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        #question-container {
+            p {
+                line-height: 1.5;
+                margin-bottom: 20px;
+                font-size: 2vw;
+            }
+            * {
+                margin: 1rem;
+            }
+        }
+        #feedback {
+            font-weight: bold;
+            font-size: 1.5vw;
+        }    
+        #result-container {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            h2 {
+                letter-spacing: 25px;
+                font-size: 5vw;
+            }           
+            p {
+                font-size: 1.5vw;
+            } 
+        }
+    }
+}
